@@ -1,4 +1,9 @@
 const apiKey = `e0a31a5975a05a014d2d77b9bb6d2162`
+//const apiKey = 'REPLACE YOUR OWN API KEY HERE'
+// FOR API KEY
+// Go to the link-  https://home.openweathermap.org/api_keys
+// Sign in
+// find your api key
 //const city = "Mumbai"
 async function fetchWeatherData(city){
    try{ const Response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
