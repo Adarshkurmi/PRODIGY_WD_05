@@ -82,3 +82,9 @@ function getWeatherIconName(weatherCondition) {
 
     return iconMap[weatherCondition] || "help";
 }
+function updateDate() {
+    const dateElement = document.getElementById('date');
+    const currentDate = new Date();
+    dateElement.textContent = currentDate.toLocaleDateString();
+  }
+  setInterval(updateDate, 1000);
